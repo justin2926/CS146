@@ -1,33 +1,37 @@
-import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
-        int[] x = {3, 1, 9};
-        int[] y = {1, 7, 3, 2, 11};
-        int[] z = {3, 2};
+        String a = "racecar";
+        String b = "le@v()el";
+        String c = "not a palindrome";
 
-        System.out.println(Arrays.toString(twoSum(x, 12)));
-        System.out.println("Expected output: [0, 2]\n");
+        System.out.println(isPalindrome(a));
+        System.out.println("Exptected: true\n");
 
-        System.out.println(Arrays.toString(twoSum(y, 9)));
-        System.out.println("Expected output: [1, 3]\n");
+        System.out.println(isPalindrome(b));
+        System.out.println("Expected: true\n");
 
-        System.out.println(Arrays.toString(twoSum(z, 5)));
-        System.out.println("Expected output: [0, 1]\n");
+        System.out.println(isPalindrome(c));
+        System.out.println("Expected: false");
+
     }
 
-    public static int[] twoSum(int[] n, int k) {
-        int[] s = new int[2];
+    public static boolean isPalindrome(String s) {
+        String lc = s.toLowerCase();
+        String z = lc.replaceAll("[^a-zA-Z0-9]","");
+        String reversed = "";
+        boolean p = false;
 
-        for (int i = 0; i < n.length; i++) {
-            for (int j = i + 1; j < n.length; j++) {
-                if (n[i] + n[j] == k) {
-                    s[0] = i;
-                    s[1] = j;
-                }
-            }
+        for (int i = 0; i < z.length(); i++) {
+            reversed = z.charAt(i) + reversed;
         }
 
-        return s;
+        if (z.equals(reversed)) {
+            p = true;
+        } else {
+            p = false;
+        }
+
+        return p;
     }
 
 }
