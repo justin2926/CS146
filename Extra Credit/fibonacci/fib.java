@@ -1,6 +1,7 @@
 public class fib {
     public static void main(String[] args) {
         System.out.println(fibRecursive(10));
+        System.out.println("Expected: 55");
     }
 
     public static int fibRecursive(int n) {
