@@ -1,13 +1,13 @@
 public class fib {
     public static void main(String[] args) {
-        System.out.println(fibRecursive(5));
+        System.out.println(fibRecursive(10));
+        System.out.println("Expected: 55");
     }
 
     public static int fibRecursive(int n) {
-        if (n == 0) {
-            return 0;
+        if (n == 1 || n == 2) {
+            return 1;
         }
-        if ()
         return fibRecursive(n - 1) + fibRecursive(n - 2);
     }
 }
