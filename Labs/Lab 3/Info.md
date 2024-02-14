@@ -9,7 +9,7 @@
 - 2^n vs 2^(2n)
   - 2^(2n)
 
-## Problem 3:
+## Problem 2:
 
 ```
 1. 1 time         isPrime(n): 
