@@ -5,4 +5,4 @@
 
 ## Analysis of Matrix Multiplication algorithm:
 - Matrix Multiplication algorithm requires iterating through each row of one matrix and before the next iteration, all three columns of the second matrix would have to be iterated through. This would require three nested for loops which is present in the algorithm provided.
-- In the instance above, this algorithm would take cubic time O(n^3) as best, worst, and average case.
+- In the instance above, this algorithm would take cubic time O(n^3) as worst and average case but O(1) as best case if the rows and columns are not equal.
