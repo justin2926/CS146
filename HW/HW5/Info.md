@@ -15,6 +15,11 @@
     - f(n) = 1
     - k = 0
     - Since a > 1, T(n) = O(n^0 * 2^n/1) = **O(2^n)**
+
+
+
+
+_
 - T(N) = 3T(N-1) + n
   - ### Recurrence Relation
     - T(N) = 3[3T(N-2) + n] + n
@@ -28,8 +33,14 @@
     - f(n) = n
     - k = 1
     - Since a > 1, T(n) = O(n^1 * 3n/3) = O(n^1 * n) = **O(n^2)**
+
+
+
+
+_
 - T(N) = 9T(N/2) + n^2
   - ### Recurrence Relation
+    - 9[9T(N)]
   - ### Master Method
     - a = 9
     - b = 2
@@ -37,6 +48,11 @@
     - d = 2
     - 2 < log_2 (9)
     - So **O(n^lg_2(9))**
+
+
+
+
+_
 - T(N) = 100T(N/2) + n^log_2(cn) + 1  (c is a constant)
   - ### Recurrence Relation
   - ### Master Method
@@ -44,7 +60,11 @@
     - b = 2
     - f(n) = n^log_2(cn) + 1
     - d = log_2(cn)+1
-    - 
+
+
+
+
+_
 - T(N) = 4T(N/2) + n^2(logn)
   - ### Recurrence Relation
   - ### Master Method
@@ -55,6 +75,11 @@
     - log_2(4) = 2
     - k = 1
     - **O(n^2 log^2(n))** 
+
+
+
+
+_
 - T(N) = 5T(N/2) + (n^2)/logn
   - ### Recurrence Relation
   - ### Master Method
