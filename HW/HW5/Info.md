@@ -63,3 +63,20 @@
     - f(n) = (n^2)/logn
     - d = 2
     - 
+
+## Problem 2:
+```
+T(N)          yetAnotherFunc(n): 
+1               if n > 1: 
+N+1              for(i=0;i<10n;i++)
+N                   doSomething;
+N/2              yetAnotherFunc(n/2);
+N/2              yetAnotherFunc(n/2);
+```  
+
+- T(N) = 2T(N/2) + 2N + 2 turns into... T(N) = 2T(N/2) + N
+- a = 2
+- b = 2
+- d = 1
+- d = log_2(2) = 1
+- O(n^1 * lg n) = **O(n lgn)**
