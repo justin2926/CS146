@@ -26,7 +26,8 @@ _
     - T(N) = (3^2) T(N-2) + 3n + n
     - T(N) = (3^k) T(N-k) + (3^(k-1)) + (3^(k-2)) + ...
     - Assume n-k = 0, n = k
-    - **O(n^2)** ?
+    - 3^n + 3^n - 1
+    - **O(3^n)** ?
   - ### Master Method
     - a = 3
     - b = 1
@@ -40,14 +41,18 @@ _
 _
 - T(N) = 9T(N/2) + n^2
   - ### Recurrence Relation
-    - 9[9T(N)]
+    - T(N/2) = 9T(N/2) + (N/2)^2
+    - T(N/4) = 9T(N/8) + (N/4)^2
+    - T(N) = n^2 * (1 + 9/4 + 81/16 + ...) 
+    - = n^2 * (4/3) / (1 - 9/4) 
+    - = **Θ(n^2 log n)**
   - ### Master Method
     - a = 9
     - b = 2
     - f(n) = n^2
     - d = 2
     - 2 < log_2 (9)
-    - So **O(n^lg_2(9))**
+    - So **O(n^lg_n)**
 
 
 
@@ -55,11 +60,18 @@ _
 _
 - T(N) = 100T(N/2) + n^log_2(cn) + 1  (c is a constant)
   - ### Recurrence Relation
+    - n^log_2(cn) = c * n^(log_2(c) + log_2(n))
+    - Assume x = log_2(n)
+    - T(2^x) = 100T(2^(x-1)) + c * (2^x)^(log_2(c) + x) + 1
+    - O(n^(log_2(c) + 1)) 
+    - = O(n * n^(log_2(c))) 
+    - = **O(n^(log_2(cn)))** ?
   - ### Master Method
     - a = 100
     - b = 2
     - f(n) = n^log_2(cn) + 1
     - d = log_2(cn)+1
+    - So **O(n^(log_2(cn)))**
 
 
 
@@ -67,6 +79,10 @@ _
 _
 - T(N) = 4T(N/2) + n^2(logn)
   - ### Recurrence Relation
+    - T(N) = 4T(N/2) + n^2(logn)
+    - T(N/2) = 4T(N/4) + (N/2)^2(log(N/2))
+    - T(N/4) = 4T(N/8) + (N/4)^2(log(N/4))
+    - **O(n^2 log^2(n))** ?
   - ### Master Method
     - a = 4
     - b = 2
@@ -82,12 +98,16 @@ _
 _
 - T(N) = 5T(N/2) + (n^2)/logn
   - ### Recurrence Relation
+    - (n^2)/logn = n * n^(1/logn)
+    - T(2^x) = 5T(2^(x-1)) + 2^x * 2^(x/log(2^x))
+    - T(2^x) = 5T(2^(x-1)) + 2^x * 2^(x/x)
+    - **O(n^(2/logn) * log(n))** ?
   - ### Master Method
     - a = 5
     - b = 2
     - f(n) = (n^2)/logn
     - d = 2
-    - 
+    - So **O(n^(2/logn) * log(n))**
 
 ## Problem 2:
 ```
