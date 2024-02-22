@@ -1,4 +1,4 @@
-public class Main {
+public class VersionHW {
     public static void main(String[] args) {
         System.out.println(firstBadVersion(4));
     }
