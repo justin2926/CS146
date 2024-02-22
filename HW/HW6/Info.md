@@ -1,0 +1,2 @@
+## Approaches used to solve:
+In this homework, I bruteforced my way into getting the solution by using three nested for loops, with a bit of modification from twoSum using if-statements to ignore duplicates. Every time a sum equal to 0 was found, I would create a new List to store the three values and then add the list to the outer list. The runtime complexity of this code is O(n^3).
