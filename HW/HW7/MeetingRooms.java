@@ -20,6 +20,13 @@ public class MeetingRooms {
                         + a[i][j]);
             }
         }
+        System.out.println();
+        for (int i = 0; i < b.length; i++) {
+            for (int j = 0; j < b[i].length; j++) {
+                System.out.println("b[" + i + "][" + j + "] = "
+                        + b[i][j]);
+            }
+        }
 
 //        System.out.println(m.minMeetingRooms(a));
 //        System.out.println(m.minMeetingRooms(b));
