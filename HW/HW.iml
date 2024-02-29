@@ -10,7 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/HW7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HW8" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (2)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
