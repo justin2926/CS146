@@ -1,4 +1,4 @@
-def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+def invertTree(self, root):
     if root is None:
         return root
 
