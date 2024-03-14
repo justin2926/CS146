@@ -1,0 +1,2 @@
+## Approaches used to solve:
+- In this lab, after figuring out the problem was just a simple swap of all nodes, I was able to implement it pretty easily. I solved it recursively by first checking whether the root is empty and if it is, I would just return the empty root. After that, I created a swap function to swap the nodes around. Then I recursively called the invertTree method on the left and right children of the root.
