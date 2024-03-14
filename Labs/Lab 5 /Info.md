@@ -1,0 +1,2 @@
+## Approaches used to solve:
+- Tihs problem seemed to be straightforward at first and I thought I had the right code but apparently I didn't after asking a friend for help who suggested some changes. After seeing the changes, I understood why and how it works. I solved this problem recursively by first checking if the root is none and if it is, return true. Next, I used min and max values to check if the value of the current node is in the range and if it's not, return false. Lastly, I made some recursive calls and returned them. 
