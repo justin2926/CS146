@@ -1,5 +1,7 @@
 ### Bonus Questions: "Topological Sorting and other party tricks"
 
+The code below topologically sorts the nodes using Kahn's Algorithm, BFS, and DFS. With Kahn's Algorithm, this removes nodes with no indegrees which creates a topologically sorted order. With BFS, since you're exploring the graph by each level, this would lead to a topological order. With DFS, since you're exploring the graph deep, you would also achieve a topologically order but you would have to reverse it after you finished.
+
 ## Kahn's Algorithm
 ```Java
 private void topologicalSort(TreeNode root) {
@@ -37,7 +39,7 @@ Output:
 \[0, 1, 2, 3]
 
 ## BFS
-```
+```Java
   public static List<Integer> topologicalSortBFS(TreeNode root) {
 	int[] indegree = new int[root.size];
 	
@@ -79,7 +81,7 @@ Output:
 \[0, 1, 2, 3]
 
 ## DFS
-```
+```Java
 
 	public static List<Integer> topologicalSortDFS(List<List<Integer>> list) {
 		List<Integer> sortedList = new ArrayList<>();
