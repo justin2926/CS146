@@ -1,1 +1,3 @@
-
+## Approach used to solve:
+- In this problem, I found out that using depth first search was the best way to approach it especially for a problem like this where there are prerequisites in which you need to go backwards.
+- First, I made a list for the prerequisites and started adding each of them into it. Then I created a helper method which does the DFS and sets the visted array to 1 to indicate that the node is being explored and to -1 once it has completed the search. This also runs DFS recursively and if it finds a course that cannot be completed, it would return false immediately without having to go through other checks. 
